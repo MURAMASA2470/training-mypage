@@ -28,8 +28,8 @@ header {
 }
 
 header .logo {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   margin: auto 0 auto 30%;
   border-radius: 50%;
   border: solid 2px rgba(200, 202, 206, 0.7);
