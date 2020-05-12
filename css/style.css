@@ -1,0 +1,108 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+:root {
+    /* ナビゲーションの要素の幅 */
+    --nav-item-width: 33.3%;/* 100% ÷ 要素数 */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+
+/* Header */
+
+header {
+  position: fixed;
+  width: 100vw;
+  height: 70px;
+  background-color: rgba(255, 255, 255, .70);
+  -webkit-box-shadow: 0 2px 6px rgba(70, 40, 40, 0.16);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+  display: flex;
+  justify-content: space-around;
+}
+
+header .global-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 60vw;
+  height: 60px;
+  margin: auto;
+  bottom: 0;
+}
+
+header .global-nav .nav-item {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  font: bold 1.2em/60px 'Raleway', sans-serif;
+}
+
+header .global-nav .nav-item:not(:last-child):before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 12px;
+  display: inline-block;
+  width: 2px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 40%;
+}
+
+header .global-nav .nav-item a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+}
+
+header .global-nav .nav-item a:hover {
+  font-size: 1.4em;
+  opacity: .6;
+}
+
+header .global-nav .nav-item #extra:hover {
+  transform: rotate(360deg);
+}
+
+
+/* Main Contents */
+
+.contents-wrapper {
+  background-color: cornflowerblue;
+  width: 100vw;
+  /* height: 580px; */
+  margin: 0 auto;
+  display: flex;
+}
+
+.contents-wrapper main {
+    background-color: gold;
+    width: 100%;
+    /* height: 550px; */
+    /* margin: 15px 0; */
+}
+
+main section[class^="about-"] {
+  
+}
+
+
+/* Footer */
+
+footer {
+    background-color: violet;
+    width: 100vw;
+    height: 50px;
+}
