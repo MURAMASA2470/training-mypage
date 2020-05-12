@@ -1,8 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 
 :root {
-    /* ナビゲーションの要素の幅 */
-    --nav-item-width: 33.3%;/* 100% ÷ 要素数 */
+  
 }
 
 * {
@@ -28,15 +27,30 @@ header {
   justify-content: space-around;
 }
 
+header .logo {
+  width: 60px;
+  height: 60px;
+  margin: auto 0 auto 30%;
+  border-radius: 50%;
+  border: solid 2px rgba(200, 202, 206, 0.7);
+  box-shadow: 2px 2.5px 4px rgba(0, 0, 0, .2);
+  overflow: hidden;
+}
+
+header .logo img {
+  width: 100%;
+  transform: scale(1.2);
+}
+
 header .global-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  width: 60vw;
+  width: 30vw;
   height: 60px;
-  margin: auto;
+  margin: auto 15% auto 0;
   bottom: 0;
 }
 
