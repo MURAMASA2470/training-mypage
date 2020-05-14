@@ -129,9 +129,35 @@ main section[class^="about-"] {
 
 }
 
-.about-profile .section-body {
+.about-profile > .section-body {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
+}
+
+.about-profile  div[class^="profile-"] {
+  margin: 30px 60px;
+}
+
+.profile-info {
+  font-size: .9em;
+}
+
+.profile-info dt {
+  font-size: .75em;
+}
+
+.profile-info dd {
+  display: block;
+  margin-top: -28px;
+  margin-bottom: -10px;
+	border-bottom: 2px dashed #29B6F6;
+}
+
+.about-hobby > .section-body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 40px 0;
 }
 
