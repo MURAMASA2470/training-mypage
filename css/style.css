@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 
 :root {
-  
+
 }
 
 * {
@@ -21,7 +21,7 @@ header {
   position: fixed;
   width: 100vw;
   height: 70px;
-  background-color: rgba(255, 255, 255, .75);
+  background-color: rgba(255, 255, 255, .85);
   -webkit-box-shadow: 0 2px 6px rgba(70, 40, 40, 0.16);
           box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
   display: flex;
@@ -119,10 +119,12 @@ main section[class^="about-"] {
 .section-title {
   font-size: 2.7rem;
   letter-spacing: 8px;
+  margin-top: 30px;
 }
 
 .section-subtitle {
   font-size: 1rem;
+  margin-bottom: -40px;
 }
 
 .section-body {
@@ -132,6 +134,7 @@ main section[class^="about-"] {
 .about-profile > .section-body {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 0 auto;
 }
 
@@ -148,9 +151,8 @@ main section[class^="about-"] {
 }
 
 .profile-info dd {
-  display: block;
+  height: 2.2em;
   margin-top: -28px;
-  margin-bottom: -10px;
 	border-bottom: 2px dashed #29B6F6;
 }
 
@@ -167,13 +169,14 @@ main section[class^="about-"] {
   background-color: aquamarine;
 }
 
+/* .about-hobby: card */
+
 .card {
   font-size: 24px;
   text-align: center;
   display: block;
-  width: 30%;
-  max-width: 300px;
-  margin: 0 60px;
+  width: 400px;
+  margin: 30px 95px;
 }
 
 .card .card-img {}
@@ -193,6 +196,77 @@ main section[class^="about-"] {
   line-height: 1.8em;
 }
 
+/* .about-cando: skills */
+
+.skills-container {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.skills-container .skills-title {
+  color: #3cb3e4;
+  font-size: .9em;
+  /* text-align: center; */
+  margin: 40px 0 -20px 110px;
+}
+.skills-container .skills-title span {
+  position: relative;
+}
+.skills-container .skills-title span:before,
+.skills-container .skills-title span:after {
+  content: "";
+  border-bottom: 2px solid #3cb3e4;
+  width: 45px;
+  margin: 0 15px;
+  position: absolute;
+  bottom: 12px;
+}
+.skills-container .skills-title span:before {
+  right: 100%;
+}
+.skills-container .skills-title span:after {
+  left: 100%;
+}
+.skills-container .skills {
+  display: flex;
+  justify-content: start;
+}
+
+.skills-container .skill {
+  width: 30px;
+  position: relative;
+  margin: 10px 45px;
+}
+
+.skills-container .skill .skill-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: solid 2px rgba(200, 202, 206, 0.7);
+  box-shadow: 2px 2.5px 4px rgba(0, 0, 0, .2);
+  overflow: hidden;
+}
+
+.skills-container .skill .skill-icon img {
+  width: 100%;
+  transform: scale(.7);
+}
+
+.skills-container .skill .skill-label {
+  font-size: .7em;
+  text-align: center;
+  position: absolute;
+  top: 45px;
+}
+
+.thanks {
+  background-color: dodgerblue;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  line-height: 3.5em;
+  margin-top: 50px;
+}
 
 /* Footer */
 
