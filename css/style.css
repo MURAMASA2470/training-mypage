@@ -237,7 +237,8 @@ main section[class^="about-"] {
 .skills-container .skill {
   /* width: 30px; */
   position: relative;
-  margin: 25px 45px;
+  margin: 25px 40px;
+  padding: 0 25px;
 }
 
 .skills-container .skill .skill-icon {
