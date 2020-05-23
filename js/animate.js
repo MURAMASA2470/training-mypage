@@ -1,25 +1,54 @@
 window.addEventListener('load', () => {
+  const profileSection = document.querySelector('.js-profile')
   const hobbySection = document.querySelector('.js-hobby')
+  const candoSection = document.querySelector('.js-cando')
 
   let isAnimated = {
-    hobbySection: false
+    profileSection : false,
+    hobbySection   : false,
+    candoSection   : false
   }
 
+  profileSection.setAttribute('style', 'opacity: 0')
   hobbySection.setAttribute('style', 'opacity: 0')
+  candoSection.setAttribute('style', 'opacity: 0')
+
+  const animateStyle = {
+    opacity: [0, 1]
+  }
+
+  const animateConfig = {
+    duration: 2000,
+    fill: 'forwards'
+  }
 
   window.addEventListener('scroll', () => {
-    const hobbyY = hobbySection.getBoundingClientRect().top + 300
     const windowY = window.pageYOffset
+    const viewPos = 800
 
-    if(!isAnimated.hobbySection && hobbyY < windowY) {
-      hobbySection.animate({
-        opacity: [0, 1]
-      }, {
-        duration: 2000,
-        fill: 'forwards'
-      })
-      isAnimated.hobbySection = true
-    }
+    const profile = (() => {
+      const { height: profileH, top: profileT } = profileSection.getBoundingClientRect()
+      if(!isAnimated.profileSection && profileT < viewPos) {
+        profileSection.animate(animateStyle, animateConfig)
+        isAnimated.profileSection = true
+      }
+    })()
+
+    const hobby = (() => {
+      const { height: hobbyH, top: hobbyT } = hobbySection.getBoundingClientRect()
+      if(!isAnimated.hobbySection && hobbyT < viewPos) {
+        hobbySection.animate(animateStyle, animateConfig)
+        isAnimated.hobbySection = true
+      }
+    })()
+
+    const cando = (() => {
+      const { height: candoH, top: candoT } = candoSection.getBoundingClientRect()
+      if(!isAnimated.candoSection && candoT < viewPos) {
+        candoSection.animate(animateStyle, animateConfig)
+        isAnimated.candoSection = true
+      }
+    })()
 
   })
 })
