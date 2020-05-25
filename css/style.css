@@ -98,7 +98,7 @@ header .global-nav .nav-item #extra:hover {
   /* background-color: cornflowerblue; */
   width: 100vw;
   /* height: 580px; */
-  margin: 0 auto;
+  margin: 70px auto 0 auto;
   display: flex;
 }
 
@@ -210,9 +210,11 @@ main section[class^="about-"] {
   text-align: center;
   margin: 40px 0 -20px 0;
 }
+
 .skills-container .skills-title span {
   position: relative;
 }
+
 .skills-container .skills-title span:before,
 .skills-container .skills-title span:after {
   content: "";
@@ -222,12 +224,15 @@ main section[class^="about-"] {
   position: absolute;
   bottom: 12px;
 }
+
 .skills-container .skills-title span:before {
   right: 100%;
 }
+
 .skills-container .skills-title span:after {
   left: 100%;
 }
+
 .skills-container .skills {
   display: flex;
   justify-content: start;
@@ -272,6 +277,92 @@ main section[class^="about-"] {
   line-height: 3.5em;
   margin-top: 50px;
 }
+
+
+/*  Target Page  */
+
+
+.target-tbl {
+    border-collapse: collapse;
+    margin: 30px auto 0 auto;
+    width: 80vw;
+}
+
+.target-tbl td {
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.target-tbl tr{
+  border-bottom: solid 2px white;
+}
+
+.target-tbl tr:last-child{
+  border-bottom: none;
+}
+
+.target-tbl tr:last-child{
+  border-bottom: none;
+}
+
+.target-tbl thead tr {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.target-tbl tbody tr {
+  height: 120px;
+}
+
+.target-tbl tbody td:first-child {
+  padding: 10px 25px;
+  text-align: center;
+  width: 19%;
+  position: relative;
+  color: white;
+  font-size: 1.1em;
+}
+
+.target-tbl tbody td:first-child::after {
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: calc(50% - 60px);
+  right: -40px;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+}
+
+.target-tbl .summer { background-color: #A7D676; }
+.target-tbl .autumn { background-color: #EE9C6A; }
+.target-tbl .winter { background-color: #75CCE8; }
+.target-tbl .spring { background-color: #F583B4; }
+
+.target-tbl .summer td:first-child::after { border-left: solid 40px #A7D676; }
+.target-tbl .autumn td:first-child::after { border-left: solid 40px #EE9C6A; }
+.target-tbl .winter td:first-child::after { border-left: solid 40px #75CCE8; }
+.target-tbl .spring td:first-child::after { border-left: solid 40px #F583B4; }
+
+
+.target-tbl tbody td:not(:first-child) {
+  font-size: .6em;
+  line-height: 2em;
+  background-color: whitesmoke;
+  padding: 0;
+  padding: 0 45px;
+  border-right: solid 2px white;
+}
+
+.target-tbl .col-seasons {}
+.target-tbl .col-work {
+  width: 41%;
+}
+.target-tbl .col-personal {
+  width: 40%;
+}
+
 
 /* Footer */
 
