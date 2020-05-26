@@ -151,13 +151,13 @@ header .global-nav .nav-item #extra:hover {
 
 .profile-img img {
   width: 100%;
-  margin-bottom: -30px;
+  margin-bottom: -35px;
 }
 
 .profile-img label {
   display: block;
   text-align: center;
-  font-size: .7em;
+  font-size: .6em;
 }
 
 .about-hobby > .section-body {
@@ -179,13 +179,16 @@ header .global-nav .nav-item #extra:hover {
   font-size: 24px;
   text-align: center;
   display: block;
-  width: 400px;
-  margin: 30px 95px;
+  width: 420px;
+  margin: 30px 85px;
 }
 
 .card .card-title {
   font-size: 1em;
-  margin-top: -25px;
+  margin: -10px 0 25px 0;
+  color: dodgerblue;
+  border-top: solid 3px dodgerblue;
+  border-bottom: solid 3px dodgerblue;
 }
 
 .card .card-subtitle {
@@ -195,7 +198,17 @@ header .global-nav .nav-item #extra:hover {
 
 .card .card-body {
   font-size: .6em;
-  line-height: 1.8em;
+  line-height: 2.2em;
+  text-align: left;
+}
+
+.card .card-img {
+  width: 400px;
+  height: 250px;
+}
+
+.card .card-img img {
+  height: 90%;
 }
 
 /* .about-cando: skills */
