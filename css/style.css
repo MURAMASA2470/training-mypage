@@ -143,6 +143,23 @@ header .global-nav .nav-item #extra:hover {
 	border-bottom: 2px dashed #29B6F6;
 }
 
+.profile-img {
+  width: 300px;
+  height: 450px;
+  position: relative;
+}
+
+.profile-img img {
+  width: 100%;
+  margin-bottom: -30px;
+}
+
+.profile-img label {
+  display: block;
+  text-align: center;
+  font-size: .7em;
+}
+
 .about-hobby > .section-body {
   display: flex;
   justify-content: center;
