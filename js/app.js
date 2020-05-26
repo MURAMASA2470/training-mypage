@@ -1,8 +1,10 @@
+// ページが読み込まれたら実行
 window.addEventListener('load', () => {
-
+  // 描写先のタグ
   const skillsWrapper = document.getElementById('js-skills-wrapper')
 
   const skillIconPath = './img/icon/'
+  // ./config.jsから読み出して動的にHTML生成
   config.icando.forEach((ary) => {
     const skillsContainer = document.createElement('div')
           skillsContainer.setAttribute('class', 'skills-container')

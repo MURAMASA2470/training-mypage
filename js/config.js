@@ -1,3 +1,4 @@
+// スキル設定ファイル
 const config = {
   icando: [
     {
