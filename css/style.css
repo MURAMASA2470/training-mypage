@@ -72,7 +72,7 @@ header .logo {
   height: 55px;
   margin: auto 0 auto 30%;
   border-radius: 50%;
-  border: solid 2px rgba(200, 202, 206, 0.7);
+  border: solid 2px rgba(200, 202, 206, .7);
   box-shadow: 2px 2.5px 4px rgba(0, 0, 0, .2);
   overflow: hidden;
 }
@@ -83,10 +83,7 @@ header .logo img {
 }
 
 header .global-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
   width: 30vw;
   height: 60px;
@@ -116,8 +113,7 @@ header .global-nav .nav-item a {
   color: black;
   text-decoration: none;
   display: inline-block;
-  -webkit-transition-duration: .6s;
-          transition-duration: .6s;
+  transition-duration: .6s;
 }
 
 header .global-nav .nav-item a:hover {
