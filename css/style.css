@@ -70,6 +70,7 @@ header {
 header .logo {
   width: 55px;
   height: 55px;
+  min-width: 55px;
   margin: auto 0 auto 30%;
   border-radius: 50%;
   border: solid 2px rgba(200, 202, 206, .7);
@@ -87,6 +88,7 @@ header .global-nav {
   justify-content: space-around;
   width: 30vw;
   height: 60px;
+  min-width: 300px;
   margin: auto 15% auto 0;
   bottom: 0;
 }
@@ -133,7 +135,7 @@ header .global-nav .nav-item #extra:hover {
 }
 
 .contents-wrapper:not(.home) {
-  margin-top: 100px;
+  margin-top: 85px;
 }
 
 .contents-wrapper main {
@@ -152,7 +154,17 @@ header .global-nav .nav-item #extra:hover {
 
 .section-subtitle {
   font-size: 1rem;
+  font-weight: 600;
   margin-bottom: -40px;
+}
+
+.about-top {
+  width: 100%;
+  height: 100vh;
+}
+
+.about-top img {
+  height: 100%;
 }
 
 .about-profile > .section-body {
@@ -179,6 +191,7 @@ header .global-nav .nav-item #extra:hover {
   height: 2.2em;
   margin-top: -28px;
 	border-bottom: 2px dashed var(--main-color);
+  font-weight: 600;
 }
 
 .profile-img {
@@ -225,8 +238,8 @@ header .global-nav .nav-item #extra:hover {
   font-size: 1em;
   margin: -10px 0 25px 0;
   color: var(--main-color);
-  border-top: solid 3px var(--main-color);
-  border-bottom: solid 3px var(--main-color);
+  border-top: solid 1.5px var(--main-color);
+  border-bottom: solid 1.5px var(--main-color);
 }
 
 .card .card-subtitle {
@@ -236,7 +249,8 @@ header .global-nav .nav-item #extra:hover {
 
 .card .card-body {
   font-size: .6em;
-  line-height: 2.2em;
+  font-weight: 400;
+  line-height: 2em;
   text-align: left;
 }
 
@@ -332,11 +346,33 @@ header .global-nav .nav-item #extra:hover {
 
 /*  Target Page  */
 
+.description {
+  text-align: center;
+  font-size: .8em;
+  font-weight: 100;
+  margin: 50px auto 10px auto;
+  width: 800px;
+  position: relative;
+  padding: .75em .5em;
+  border: 1.5px solid #7ED1E6;
+}
+
+.description:after {
+  content: "Infomation";
+  position: absolute;
+  top: -1.6em;
+  left: 10px;
+  background: #fff;
+  font-size: 1em;
+  color: #7ED1E6;
+  padding: 0 10px;
+}
 
 .target-tbl {
     border-collapse: collapse;
-    margin: 30px auto 0 auto;
+    margin: 0 auto;
     width: 80vw;
+    min-width: 800px;
 }
 
 .target-tbl td {
@@ -363,8 +399,9 @@ header .global-nav .nav-item #extra:hover {
 
 .target-tbl thead .head-subtitle {
   font-size: .5em;
+  font-weight: 400;
   display: block;
-  margin-top: -30px;
+  margin: -30px 0 -20px 0;
 }
 
 .target-tbl tbody tr {
@@ -374,7 +411,7 @@ header .global-nav .nav-item #extra:hover {
 .target-tbl tbody td:first-child {
   padding: 10px 25px;
   text-align: center;
-  width: 19%;
+  width: 15%;
   position: relative;
   color: white;
   font-size: 1.1em;
@@ -404,6 +441,7 @@ header .global-nav .nav-item #extra:hover {
 
 .target-tbl tbody td:not(:first-child) {
   font-size: .6em;
+  font-weight: 500;
   line-height: 2em;
   background-color: whitesmoke;
   padding: 0 45px;
@@ -411,11 +449,11 @@ header .global-nav .nav-item #extra:hover {
 }
 
 .target-tbl tbody td.col-work {
-  width: 41%;
+  width: 43%;
   padding-left: 60px;
 }
 .target-tbl tbody td.col-personal {
-  width: 40%;
+  width: 42%;
 }
 
 
