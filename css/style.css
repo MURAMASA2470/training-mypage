@@ -350,16 +350,15 @@ main section[class^="about-"] {
   font-size: .6em;
   line-height: 2em;
   background-color: whitesmoke;
-  padding: 0;
   padding: 0 45px;
   border-right: solid 2px white;
 }
 
-.target-tbl .col-seasons {}
-.target-tbl .col-work {
+.target-tbl tbody td.col-work {
   width: 41%;
+  padding-left: 60px;
 }
-.target-tbl .col-personal {
+.target-tbl tbody td.col-personal {
   width: 40%;
 }
 
