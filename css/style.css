@@ -1,12 +1,15 @@
+/* フォントのインポート */
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 
 * {
+    /* 無駄な余白をリセット */
     margin: 0;
     padding: 0;
 }
 
 html, body {
   overflow-x: hidden;
+  /* フォントの設定 */
   font: bold 1.2em/60px 'Raleway', sans-serif;
 }
 
@@ -18,8 +21,7 @@ header {
   width: 100vw;
   height: 70px;
   background-color: rgba(255, 255, 255, .85);
-  -webkit-box-shadow: 0 2px 6px rgba(70, 40, 40, 0.16);
-          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
   display: flex;
   justify-content: space-around;
   z-index: 99;
@@ -122,6 +124,7 @@ header .global-nav .nav-item #extra:hover {
   margin: 0 auto;
 }
 
+/* class名が profile- で始まる全クラスに適応 */
 .about-profile  div[class^="profile-"] {
   margin: 30px 60px;
 }
@@ -324,7 +327,6 @@ header .global-nav .nav-item #extra:hover {
 .target-tbl .autumn td:first-child::after { border-left: solid 40px #EE9C6A; }
 .target-tbl .winter td:first-child::after { border-left: solid 40px #75CCE8; }
 .target-tbl .spring td:first-child::after { border-left: solid 40px #F583B4; }
-
 
 .target-tbl tbody td:not(:first-child) {
   font-size: .6em;
