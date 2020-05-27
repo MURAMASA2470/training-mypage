@@ -1,12 +1,15 @@
 // ページが読み込まれたら実行
 window.addEventListener('load', () => {
+
   // 各セクションを取得
+  const topMessage = document.querySelector('.js-message')
   const profileSection = document.querySelector('.js-profile')
   const hobbySection = document.querySelector('.js-hobby')
   const candoSection = document.querySelector('.js-cando')
 
   // アニメーション終了フラグ
   let isAnimated = {
+    topMessage     : false,
     profileSection : false,
     hobbySection   : false,
     candoSection   : false
@@ -14,9 +17,10 @@ window.addEventListener('load', () => {
 
   // 初期段階では要素を透明に
   // CSSで書こうか迷ったがJSが無効だと表示されなくなる為，JSにて記述
-  profileSection.setAttribute('style', 'opacity: 0')
-  hobbySection.setAttribute('style', 'opacity: 0')
-  candoSection.setAttribute('style', 'opacity: 0')
+  const jsStyle = 'opacity: 0'
+  profileSection.setAttribute('style', jsStyle)
+  hobbySection.setAttribute('style', jsStyle)
+  candoSection.setAttribute('style', jsStyle)
 
   // アニメーション演出
   const animateStyle = {
@@ -70,4 +74,22 @@ window.addEventListener('load', () => {
     })()
 
   })
+
+
+  // メイン画像メッセージのアニメーション
+  const message = (() => {
+    // 1秒待ってからアニメーション実行
+    setTimeout(() => {
+      topMessage.animate(
+        {
+          transform: ['rotateX(0deg)', 'rotateX(90deg)']
+        },
+        {
+          duration: 1300,
+          fill: 'forwards'
+        }
+        )
+      isAnimated.topMessage = true
+    }, 1000)
+  })()
 })
