@@ -24,7 +24,7 @@ const config = {
     {
       title: 'OS',
       items: [
-        'Windows', 'macOS', 'ubuntu', 'CentOS', 'elementaryOS', 'KaliLinux', 'OpenSUSE'
+        'Windows', 'MacOS', 'ubuntu', 'CentOS', 'elementaryOS', 'KaliLinux', 'OpenSUSE'
       ]
     },
     {
