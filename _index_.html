@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample</title>
+</head>
+<body>
+  <div style="pointer-events: none;user-select: none;margin-top: 100px;">
+    <div id="san" style="text-align: center; font-size: 25em; font-weight: bold; line-height: 1em; height: 200px;color: orange;">☀️</div>
+    <div id="count" style="text-align: center; font-size: 5em; font-weight: bold; line-height: .2em; height: 200px;">1</div>
+  </div>
+  <div id="nico" style="text-align: center; font-size: 8em; font-weight: bold; line-height: 5.2em;margin-top: -200px;pointer-events: none;user-select: none;">\(๑╹ω╹๑ )/</div>
+  <script>
+    const func = function() {
+      let count = document.getElementById('count');
+      let nico = document.getElementById('nico');
+      let san = document.getElementById('san');
+
+      document.addEventListener('click', function() {
+        let c = Number(count.innerText) + 1;
+        count.innerText = c;
+        if(c >= 20) {
+          san.style.color = 'gold';
+          nico.innerText = '\\(๑^ω^๑ )/'
+        }
+        if (c >= 100) {
+          san.style.color = 'red';
+          nico.innerText = '\\(๑>ω<๑ )/'
+        }
+      });
+    }();
+  </script>
+</body>
+</html>
