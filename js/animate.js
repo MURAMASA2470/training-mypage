@@ -1,9 +1,8 @@
 // ページが読み込まれたら実行
 window.addEventListener('load', () => {
-  document.querySelector('body').scrollTo(0,0)
   // 各セクションを取得
   const topMessageContainer = document.querySelector('.js-top-message-container')
-  const topMessageContainer = document.querySelector('.js-static-message')
+  const staticMessage = document.querySelector('.js-static-message')
   const topMessage = document.querySelector('.js-message')
   const profileSection = document.querySelector('.js-profile')
   const hobbySection = document.querySelector('.js-hobby')
@@ -71,22 +70,32 @@ window.addEventListener('load', () => {
 
   // メイン画像メッセージのアニメーション
   const message = (() => {
-    topMessageContainer.animate(animateStyle, animateConfig)
+    topMessageContainer.animate(animateStyle, {
+      duration: 2000,
+      fill: 'forwards'
+    })
     topMessage.animate({
         transform: ['rotateX(0deg)', 'rotateX(90deg)']
       }, {
-        duration: 1500,   // 再生時間
+        duration: 1200,   // 再生時間
         fill: 'forwards', // アニメーション結果保持の有無
-        delay: 3000       // 遅延秒数
+        delay: 3000,      // 遅延秒数
+        easing: 'ease-out'
       })
       topMessageContainer.animate({
-          left: ['50%', '77%'],
+          left: ['50%', '86%'],
           top: ['50%', '7%'],
-          fontSize: ['128px', '76px']
+          fontSize: ['100px', '46px']
         }, {
-          duration: 2000,   // 再生時間
-          fill: 'forwards', // アニメーション結果保持の有無
-          delay: 6000       // 遅延秒数
+          duration: 1000,
+          fill: 'forwards',
+          delay: 6000,
+          easing: 'ease-out'
+        })
+        staticMessage.animate(animateStyle, {
+          duration: 2000,
+          fill: 'forwards',
+          delay: 8500
         })
       isAnimated.topMessage = true
   })()

@@ -206,7 +206,7 @@ header .global-nav .nav-item #extra:hover {
 	top: 50%;
 	left: 50%;
   transform: translateX(-50%);
-  font-size: 128px;
+  font-size: 100px;
 }
 
 .top-message {
@@ -529,6 +529,7 @@ footer {
 
 /* js制御用のスタイル */
 .js-top-message-container,
+.js-static-message,
 .js-profile,
 .js-hobby,
 .js-cando {
