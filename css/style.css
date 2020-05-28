@@ -15,6 +15,11 @@ html, body {
   overflow-x: hidden;
   /* フォントの設定 */
   font: bold 1.2em/60px 'Raleway', sans-serif;
+  -ms-overflow-style: none;    /* IE, Edge 対応 */
+  scrollbar-width: none;       /* Firefox 対応 */
+}
+html::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+    display:none;
 }
 
 /* hrタグのデザイン */
@@ -67,7 +72,15 @@ header {
   z-index: 99;
 }
 
-header .logo {
+header .header-left-content {
+  display: flex;
+}
+
+.header-left-content .page-title {
+  margin-left: 40px;
+}
+
+.header-left-content .logo {
   width: 55px;
   height: 55px;
   min-width: 55px;
@@ -78,7 +91,7 @@ header .logo {
   overflow: hidden;
 }
 
-header .logo img {
+.header-left-content .logo img {
   width: 100%;
   transform: scale(1.2);
 }
@@ -89,7 +102,7 @@ header .global-nav {
   width: 30vw;
   height: 60px;
   min-width: 300px;
-  margin: auto 15% auto 0;
+  margin: auto 0;
   bottom: 0;
 }
 
@@ -159,8 +172,8 @@ header .global-nav .nav-item #extra:hover {
 }
 
 .about-top {
-  width: 100;
-  height: 950px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .about-top figure {
@@ -169,49 +182,50 @@ header .global-nav .nav-item #extra:hover {
   height: 100%;
 }
 
-.about-top .top-message-container {
+.about-top figure .scroll-icon {
+  width: 100px;
+	position: absolute;
+	top: 87%;
+	left: 50%;
+  transform: translateX(-50%);
+}
+
+.about-top .scroll-icon img {
+  width: 100%;
+}
+
+.about-top .top-img img {
+  min-width: 100%;
+  height: 100%;
+}
+
+.about-top .top-message-container,
+.about-top .static-message {
   /* 上下左右中央寄せ */
 	position: absolute;
 	top: 50%;
 	left: 50%;
   transform: translateX(-50%);
+  font-size: 128px;
 }
 
 .top-message {
   transform-style: preserve-3d;
 }
 
-.top-message .message {
+.about-top .message {
   backface-visibility : visible;
-  font-size: 5em;
   text-align: center;
   color: whitesmoke;
   min-width: 100vw;
-  /* line-height: 1em; */
 }
 
 .top-message .myname {
-  transform: rotateX(-90deg) translateZ(50px);
-}
-
-.top-message .tisc {
   transform: translateZ(50px);
 }
 
-.top-message-container .scroll-icon {
-  width: 100px;
-	position: absolute;
-	top: 290%;
-	left: 50%;
-  transform: translateX(-50%);
-}
-
-.top-message-container .scroll-icon img {
-  width: 100%;
-}
-
-.about-top .top-img img {
-  min-width: 100vw;
+.top-message .tisc {
+  transform: rotateX(-90deg) translateZ(50px);
 }
 
 .about-profile > .section-body {
@@ -313,7 +327,7 @@ header .global-nav .nav-item #extra:hover {
 /* .about-cando: skills */
 
 .skills-container {
-  width: 70vw;
+  width: 75vw;
   margin: 0 auto;
 }
 
@@ -354,7 +368,7 @@ header .global-nav .nav-item #extra:hover {
 
 .skills-container .skill {
   position: relative;
-  margin: 25px 40px;
+  margin: 25px 35px;
   padding: 0 25px;
 }
 
@@ -511,4 +525,12 @@ footer {
   height: 50px;
   text-align: center;
   padding: 15px;
+}
+
+/* js制御用のスタイル */
+.js-top-message-container,
+.js-profile,
+.js-hobby,
+.js-cando {
+  opacity: 0;
 }

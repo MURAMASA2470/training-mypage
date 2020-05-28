@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Keisuke's HomePage</title>
 
     <!-- import css -->
     <link rel="stylesheet" href="./css/style.css">
@@ -19,13 +19,14 @@
 </head>
 <body>
 
-    <!-- <style>:root { --main-color: red !important; }</style> -->
-
     <header>
-        <div class="logo">
-            <a href="./index.html"><img src="./img/poppo_ico.png" alt=""></a>
+        <div class="header-left-content">
+            <div class="header-logo">
+                <div class="logo"><a href="./index.html"><img src="./img/poppo_ico.png" alt=""></a></div>
+            </div>
+            <div class="page-title">Kimura's HomePage</div>
         </div>
-        <nav class="global-nav">
+        <nav class="global-nav header-right-content">
             <div class="nav-item"><a href="./index.html" class="active-link">About</a></div>
             <div class="nav-item"><a href="./html/target.html">Target</a></div>
             <div class="nav-item"><a href="./html/gallery.html"><s>Gallery</s></a></div>
@@ -36,16 +37,21 @@
         <main>
             <section class="about-top">
                 <figure>
-                    <span class="top-img"><img src="https://placehold.jp/1920x950.png" alt=""></span>
-                    <div class="top-message-container">
+                    <span class="top-img">
+                        <!-- <img src="https://lh3.googleusercontent.com/fJS0a2HEXgWZu-w-c8-ciKNGBCZu0f7WCet29UGo_8McWNW3-GQTKhjkPLJghY2tuhBhwGctpnsR84vQHEG-2RwN_9YMEM1WKMpf1Fvz95V0Dsd-bF7lysILDLsninTqCE5e07Io998FDLqn_T02vh_y3cqBt4tVbDsgvt8ULLkEZIvGnfI09bRSxfFAyJv3Wfd0Mh2WoBk3hNN1FGJFy-OE0Ao09GSEGtjTPN-oSIcIq2PAG5wwWgNK5KlDGFmwEIFVS9MW68DwOKV41PYWnsAlJd0VzBGCZUN0-vMmkLKo4AQ2PXeN4OqNgmt1lCUSSa2xgtGu_yV-bmToJ0uDE-Wq_qA6AMvkASzI9wmlO1PRdNjoGvXjzydGLu3hdG-af5SWTVUm4Dl77wTy5tFp4fEMoia3OOhxQQPFnXC3W9Zj26-aWF9fHRKOpujafJ6CebIfRu8SP8ErSTa57jQOmogTlJuMIK5bT0rD0pmcB1qtFBVU1d573PEwFpTTKP_wpUo8X3RbGfeS4QokNewFDf5EwG0ZJj7Y4HrqOAEc4lZjBeq5vXWfJWDGdvM9_rhiKUjqPh_uizePCwR7AosS8276EJCqdfjery0AEZvlL8-V6VUG6524UFTK0BrXAJGB3vGROT-TFgiz0HAsxLZ2Vx-zqmoDXTJcB04djlHdyvQHoCZLgiUbUOJaCeTgJnY=w1262-h946-no?authuser=0" alt=""> -->
+                        <img src="https://lh3.googleusercontent.com/Hu1L8vbEkT_d_4BGjkGZNAa0KKXMe2VtTRXSmO_Hdui4tGPl6K-vduL-0MoTJ2UTwkQrODjqb8xuzJwOvihV7OcpilN-aCN7HuvDl_pEKCqQnpKvtSWB8p0c_KgjLy8ye_8jIq5TAYMAJ3ulqWiva7fZTOMXvDGf3-vNOMO7ba27WgwmPjCwldS9q558jmFfJrCnhOc8hz2E0JI8fRNcaJqumS-v7UtwLmT2dGdtAkCJ7oGEAi4vIKBeNVX4Zg3lE7JxhXCxVLodkeMbScEETi1bMx_4kXvgCvhzbqGVGQ3VoL6pgoCVc6xGQCJn9oqT8xbO1mWQJkU4jaDzXmr7NQkNbaxe2CkqHx5cHQWj8JYjpnya8s7tfI19d-u4B9zYqs1umOiRmk6nHBF-x4OvkxW6H0AlfpAt1uEyOOS5GK2wHDKdRjRHVrVOGw7f4SQiHa4ulqevy57HZ7VPP_d7dpwYlH_J4edru4GNwEJc2D186MC-hBrsknr6hTDLq4bdPjarS0WoCSZSTG2UlPN6OKSMZggGVbXYruS-SB7tr2JDBoNbUpIvNgn8UrwUe_PGSkTdyvuraC6Yzz2w84ce0W3pMqXl_uF9KaERNVoEwfNFWrpiwClHSw-L6bwziwMCut4aATk3nG8uwTCNTs7e1ghf9ippY77CSxQadn3BhzOf4-eBK7nAQf0gyh8dIzA=w1761-h947-no?authuser=0" alt="">
+                    </span>
+                    <div class="top-message-container js-top-message-container">
                         <div class="top-message js-message">
-                            <div class="message tisc">TISC CO.,LTD.</div>
                             <div class="message myname">Kimura Keisuke</div>
+                            <div class="message tisc">Belong to TISC CO.,LTD.</div>
                         </div>
-                        <div class="scroll-icon">
-                            <!-- <img src="http://www.uncamwho.org/uploads/2/3/5/0/23504526/scroll-down-arrow.gif" alt=""> -->
-                            <img src="https://wb88k22i7ky3kwt773xkr0f1-wpengine.netdna-ssl.com/wp-content/uploads/scroll-down-ani-white.gif" alt="">
-                        </div>
+                    </div>
+                    <div class="static-message js-static-message">
+                        <div class="message">Kimura Keisuke</div>
+                    </div>
+                    <div class="scroll-icon">
+                        <img src="https://wb88k22i7ky3kwt773xkr0f1-wpengine.netdna-ssl.com/wp-content/uploads/scroll-down-ani-white.gif" alt="">
                     </div>
                 </figure>
             </section>
@@ -87,7 +93,6 @@
                             <img src="https://2.bp.blogspot.com/-Gp2_6OZJ1FQ/XASwZmJF9yI/AAAAAAABQZ0/C8dUDl0e_uEWbDjvwNAo8DArlJX4vIaFwCLcBGAs/s800/computer_programming_man.png" alt="">
                         </div>
                         <div class="card-title">プログラミング</div>
-                        <!-- <div class="card-subtitle">画像サブタイトル</div> -->
                         <div class="card-body">
                             プログラミング自体を本格的に始めたのは専門学校に入ってからですが，幼い頃からよくパソコンに触れていました。<br>
                             パソコンにハマったきっかけは小学５年生の時にゲームのセーブデータのバイナリを弄って改造していたこと。そこから面白みを感じてこの世界にドップリとハマっていきました。<br>
@@ -99,7 +104,6 @@
                             <img src="https://4.bp.blogspot.com/-uUg-V_7w52o/XAY5y3CJtPI/AAAAAAABQe4/neZv1Q6VyvoRDBE5sVfP485VmUc9V4jsgCLcBGAs/s800/computer_jisaku_bunkai.png" alt="">
                         </div>
                         <div class="card-title">自作PC</div>
-                        <!-- <div class="card-subtitle">画像サブタイトル</div> -->
                         <div class="card-body">
                             自作と言ってもPCのパーツごとに購入して組み立てる程度で，コンピュータを０から作るわけではありません。<br>
                             主に友人に相談されてアドバイスをしたり，購入して一緒に組み立てることの方が多いです。<br>
@@ -111,7 +115,6 @@
                             <img src="https://2.bp.blogspot.com/-A2A81ipvrok/UzoZvx0FyNI/AAAAAAAAetI/1KLZw1t-L-c/s800/heitai.png" alt="">
                         </div>
                         <div class="card-title">ミリタリー</div>
-                        <!-- <div class="card-subtitle">画像サブタイトル</div> -->
                         <div class="card-body">
                             きっかけは分からないが幼い頃には既に銃が好きでした。当初は銃のみにしか興味がなかったが段々と軍事兵器(戦車，艦艇，航空機，ミサイルなど)にも興味を惹かれていきました。<br>
                             高校生くらいになって色々と調べていると，その兵器が使われていた戦争の歴史にたどり着き最終的に政治にも興味を持つこととなりました。<br>
@@ -123,7 +126,6 @@
                             <img src="https://4.bp.blogspot.com/-uYDnIFh0rRQ/ViipYYRjZ3I/AAAAAAAAz3E/pRmLi_NOD7A/s800/karaoke_young.png" alt="">
                         </div>
                         <div class="card-title">カラオケ</div>
-                        <!-- <div class="card-subtitle">画像サブタイトル</div> -->
                         <div class="card-body">
                             高校生の時くらいからカラオケに行くようになり，専門学校時代も多い時だと週２,３回行く時もありました。<br>
                             途中まではより高い点数を取ることだけに執着していましたが，今は上手く聞こえるようにも力を入れています。<br>
@@ -136,7 +138,6 @@
                             <img src="https://4.bp.blogspot.com/-5EmrK8uKs54/WkR6OilV53I/AAAAAAABJVI/BFBcinvseFY5V3mNGezd4qtMQxJ2KEKcQCLcBGAs/s800/youtuber_virtual.png" alt="">
                         </div>
                         <div class="card-title">バーチャルユーチューバー(Vtuber)</div>
-                        <!-- <div class="card-subtitle">画像サブタイトル</div> -->
                         <div class="card-body">
                             ２０１６年夏，一躍話題となった「キズナアイ」の登場をきっかけにVtuberにハマりました。<br>
                             当初は数人しかいなかったVtuberも今では１万人を超えてきており アイドル戦国時代を彷彿とさせる構図になってきています。<br>
@@ -148,7 +149,6 @@
                             <img src="https://4.bp.blogspot.com/-atDwaz1O1Jk/UZYlGYlZNnI/AAAAAAAATJs/J-qF1g96c1M/s800/kakizome_boy.png" alt="">
                         </div>
                         <div class="card-title">書道</div>
-                        <!-- <div class="card-subtitle">画像サブタイトル</div> -->
                         <div class="card-body">
                             小学３年生から中学３年生までの６年間書道をしていました。<br>
                             段位は硬筆が準６段，毛筆は最高段位の８段まで取得することができ，最初こそ字を書くのは苦手でしたがいつしか好きになっていました。<br>
@@ -169,7 +169,7 @@
                     <div id="js-skills-wrapper"></div>
                 </div>
             </section>
-            <div class="section-label thanks">Thank you for visiting !</div>
+            <div class="section-label thanks" onclick="location.href='_index_.html'">Thank you for visiting !</div>
         </main>
     </div><!-- End: .contents-wrapper -->
     <footer>&copy;2020 Kimura Keisuke</footer>
