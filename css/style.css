@@ -203,7 +203,7 @@ header .global-nav .nav-item #extra:hover {
 .about-top .static-message {
   /* 上下左右中央寄せ */
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	left: 50%;
   transform: translateX(-50%);
   font-size: 100px;
@@ -218,14 +218,20 @@ header .global-nav .nav-item #extra:hover {
   text-align: center;
   color: whitesmoke;
   min-width: 100vw;
+  line-height: normal;
 }
 
-.top-message .myname {
+.top-message .welcome {
   transform: translateZ(50px);
 }
 
 .top-message .tisc {
   transform: rotateX(-90deg) translateZ(50px);
+}
+
+.static-message .myname {
+  font-size: 128px;
+  margin-top: 30px;
 }
 
 .about-profile > .section-body {

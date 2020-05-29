@@ -84,7 +84,7 @@ window.addEventListener('load', () => {
       })
       topMessageContainer.animate({
           left: ['50%', '86%'],
-          top: ['50%', '7%'],
+          top: ['40%', '4%'],
           fontSize: ['100px', '46px']
         }, {
           duration: 1000,
