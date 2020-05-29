@@ -7,6 +7,7 @@ window.addEventListener('load', () => {
   const profileSection = document.querySelector('.js-profile')
   const hobbySection = document.querySelector('.js-hobby')
   const candoSection = document.querySelector('.js-cando')
+  const scrollTopBtn = document.querySelector('.js-scroll-top')
 
   // アニメーション終了フラグ
   let isAnimated = {
@@ -66,6 +67,13 @@ window.addEventListener('load', () => {
       }
     })()
 
+    const scrollUp = (() => {
+      if(windowY > 500)
+        scrollTopBtn.classList.remove('transparent')
+      else
+        scrollTopBtn.classList.add('transparent')
+    })()
+
   })
 
   // メイン画像メッセージのアニメーション
@@ -99,4 +107,13 @@ window.addEventListener('load', () => {
         })
       isAnimated.topMessage = true
   })()
+
+  // ページトップへのスクロールアニメーション
+  scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  })
 })
